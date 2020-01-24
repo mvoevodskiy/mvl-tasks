@@ -14,7 +14,9 @@ class MVLBlankSemis extends MVLoaderBase{
                     DBHandler: {
                         sequelize: {},
                         models: {
-                            // MVLExampleModel: require('./models/mvlblankexample'),
+                            mvltAction: require('./models/mvltAction'),
+                            mvltActionList: require('./models/mvltActionList'),
+                            mvltActionListRelation: require('./models/mvltActionListRelation'),
                         }
                     }
                 },
