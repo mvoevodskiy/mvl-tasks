@@ -1,6 +1,6 @@
 const MVLoaderBase = require('mvloader/src/mvloaderbase');
 
-class MVLBlankSemis extends MVLoaderBase{
+class Mvltaskssemis extends MVLoaderBase{
     static exportConfig = {
         ext: {
             classes: {
@@ -14,7 +14,9 @@ class MVLBlankSemis extends MVLoaderBase{
                     DBHandler: {
                         sequelize: {},
                         models: {
-                            // MVLExampleModel: require('./models/mvlblankexample'),
+                            mvltAction: require('./models/mvltAction'),
+                            mvltActionList: require('./models/mvltActionList'),
+                            mvltActionListRelation: require('./models/mvltActionListRelation'),
                         }
                     }
                 },
@@ -30,4 +32,4 @@ class MVLBlankSemis extends MVLoaderBase{
 
 }
 
-module.exports = MVLBlankSemis;
+module.exports = Mvltaskssemis;
